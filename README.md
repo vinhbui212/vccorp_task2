@@ -19,3 +19,31 @@ Tự động cấu hình Spring khi cần thiết
 Không sinh code cấu hình và không yêu cầu phải cấu hình bằng XML …
 
 ![image](https://github.com/vinhbui212/vccorp_task2/assets/100837872/d5db9641-972b-49e6-825a-733b95a20f52)
+Các thành phần của Spring
+-Lớp Controller:
+Lớp này nằm trên cùng của kiến trúc Spring Boot. Nó chịu trách nhiệm:
+Thực hiện authentication (xác thực).
+Chuyển đổi dữ liệu JSON thành đối tượng (và ngược lại).
+Xử lý các HTTP request
+Truyền authentication tới lớp bussiness
+ Class Controller xử lý tất cả các REST API request (GET, POST, PUT, DELETE, PATCH) đến từ client
+ -Lớp Service:
+Lớp này chịu trách nhiệm:
+Thực hiện validation.
+Thực hiện authorization (uỷ quyền).
+Xử lý các logic và quy tắc nghiệp vụ.
+ là nơi xử lý logic nghiệp vụ. Ngắn gọn thì logic nghiệp vụ trong kỹ nghệ phần mềm là những gì mà chúng ta xác định phần mềm cần phải làm. 
+ Một ví dụ là validation. Nếu bạn muốn validate gì đó, nó phải được thực hiện trong class Service.
+- Interface repository
+Lớp này chịu trách nhiệm:
+Chứa các logic lưu trữ
+Lấy các đối tượng và chuyển đổi thành các hàng trong database (và ngược lại).
+ Chúng ta viết các truy vấn tới database trong interface này.Giao tiếp với lớp Service và database
+-Lớp model
+ Tượng trưng cho 1 bảng trong database thường dùng hibernate để dễ dàng tạo bảng trong database.
+* Ưu điểm
+  - Tự động cấu hình một cách mạnh mẽ được nhúng sẵn server khác với java web cũ phải tải và cài đặt cấu hình rất nhiều
+  - Ghi đè các bean cũ để sử dụng lại nếu cần
+ *Nhược điểm
+-Thiếu kiểm soát. Spring Boot tạo ra rất nhiều dependency không được sử dụng, dẫn đến file triển khai có dung lượng lớn.
+-Quá trình phức tạp và tốn thời gian để chuyển đổi một dự án Spring cũ hoặc hiện có thành các ứng dụng Spring Boot.
