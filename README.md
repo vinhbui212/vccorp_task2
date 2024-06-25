@@ -27,7 +27,7 @@ Chuyển đổi dữ liệu JSON thành đối tượng (và ngược lại).
 Xử lý các HTTP request
 Truyền authentication tới lớp bussiness
  Class Controller xử lý tất cả các REST API request (GET, POST, PUT, DELETE, PATCH) đến từ client
- -Lớp Service:
+ - Lớp Service:
 Lớp này chịu trách nhiệm:
 Thực hiện validation.
 Thực hiện authorization (uỷ quyền).
