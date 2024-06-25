@@ -20,7 +20,7 @@ Không sinh code cấu hình và không yêu cầu phải cấu hình bằng XML
 
 ![image](https://github.com/vinhbui212/vccorp_task2/assets/100837872/d5db9641-972b-49e6-825a-733b95a20f52)
 Các thành phần của Spring
--Lớp Controller:
+- Lớp Controller:
 Lớp này nằm trên cùng của kiến trúc Spring Boot. Nó chịu trách nhiệm:
 Thực hiện authentication (xác thực).
 Chuyển đổi dữ liệu JSON thành đối tượng (và ngược lại).
@@ -39,7 +39,7 @@ Lớp này chịu trách nhiệm:
 Chứa các logic lưu trữ
 Lấy các đối tượng và chuyển đổi thành các hàng trong database (và ngược lại).
  Chúng ta viết các truy vấn tới database trong interface này.Giao tiếp với lớp Service và database
--Lớp model
+- Lớp model
  Tượng trưng cho 1 bảng trong database thường dùng hibernate để dễ dàng tạo bảng trong database.
 * Ưu điểm
   - Tự động cấu hình một cách mạnh mẽ được nhúng sẵn server khác với java web cũ phải tải và cài đặt cấu hình rất nhiều
