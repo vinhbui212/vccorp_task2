@@ -17,3 +17,5 @@ Nhúng trực tiếp Tomcat, Jetty hoặc Undertow (không cần phải deploy r
 Các starter dependency giúp việc cấu hình Maven đơn giản hơn
 Tự động cấu hình Spring khi cần thiết
 Không sinh code cấu hình và không yêu cầu phải cấu hình bằng XML …
+
+![image](https://github.com/vinhbui212/vccorp_task2/assets/100837872/d5db9641-972b-49e6-825a-733b95a20f52)
